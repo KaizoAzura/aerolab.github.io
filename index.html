@@ -1,0 +1,415 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>AEROLAB - Electronic Component Information</title>
+
+    <!-- link css -->
+    <link rel="stylesheet" href="bootstrap-5.3.3-dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="dist/style.css" />
+
+    <!-- font link -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+    <!-- font poppins -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- icon link -->
+    <!-- font awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    />
+  </head>
+  <body>
+    <!-- offcanvas search mobile -->
+
+    <div
+      class="offcanvas offcanvas-top"
+      tabindex="-1"
+      id="searchMobile"
+      aria-labelledby="offcanvasTopLabel"
+    >
+      <div class="offcanvas-body">
+        <form class="d-flex w-100" role="search">
+          <input
+            class="form-control me-2"
+            type="search"
+            placeholder="Search Component..."
+            aria-label="Search"
+          />
+          <button class="btn btn-success btn-search" type="submit">
+            <i class="fa-solid fa-magnifying-glass"></i>
+          </button>
+        </form>
+      </div>
+    </div>
+    <!-- end offcanvas search mobile -->
+    <!-- navbar -->
+
+    <nav class="navbar navbar-dark fixed-top">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">AEROLAB</a>
+        <form class="d-sm-flex d-none w-50" role="search">
+          <input
+            class="form-control me-2"
+            type="search"
+            placeholder="Search Component..."
+            aria-label="Search"
+          />
+          <button class="btn btn-success btn-search" type="submit">
+            <i class="fa-solid fa-magnifying-glass"></i>
+          </button>
+        </form>
+        <!-- btn search mobile -->
+        <button
+          class="btn btn-success btn-search d-sm-none ms-auto"
+          data-bs-toggle="offcanvas"
+          data-bs-target="#searchMobile"
+        >
+          <i class="fa-solid fa-magnifying-glass"></i>
+        </button>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="offcanvas"
+          data-bs-target="#offcanvasDarkNavbar"
+          aria-controls="offcanvasDarkNavbar"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div
+          class="offcanvas offcanvas-end"
+          tabindex="-1"
+          id="offcanvasDarkNavbar"
+          aria-labelledby="offcanvasDarkNavbarLabel"
+        >
+          <div class="offcanvas-header">
+            <h5
+              class="offcanvas-title navbar-brand"
+              id="offcanvasDarkNavbarLabel"
+            >
+              AEROLAB MENU
+            </h5>
+            <button
+              type="button"
+              class="btn-close btn-close-white"
+              data-bs-dismiss="offcanvas"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="offcanvas-body">
+            <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#"
+                  ><i class="me-3 fa-solid fa-house"></i>Home</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#"
+                  ><i class="me-3 fa-solid fa-box-archive"></i>Component</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#"
+                  ><i class="me-3 fa-solid fa-comment"></i>Community</a
+                >
+              </li>
+              <hr />
+              <li class="nav-item">
+                <a class="nav-link" href="#"
+                  ><i class="me-3 fa-solid fa-headset"></i>Contact us</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#"
+                  ><i class="me-3 fa-solid fa-circle-question"></i>Help</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#"
+                  ><i class="me-3 fa-solid fa-newspaper"></i>Blog</a
+                >
+              </li>
+              <hr />
+              <li class="nav-item">
+                <a class="nav-link" href="#"
+                  ><i class="me-3 fa-solid fa-right-to-bracket"></i>Login</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <!-- end navbar -->
+
+    <!-- hero section -->
+
+    <div class="container-fluid hero">
+      <div class="overlay"></div>
+      <div class="container">
+        <div class="row">
+          <div class="col-12 text-center">
+            <h1>Find Everything You Need to Know about Electricity Here!</h1>
+            <h5>
+              Latest Guides, Tips and Information about Electrical Components
+              and Systems
+            </h5>
+            <a href="#pwrSrc" class="btn btn-primary">Let's Explore</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- end hero section -->
+
+    <!-- Power source -->
+    <div class="container-fluid pwr-src my-3 px-4 py-lg-3" id="pwrSrc">
+      <div class="row">
+        <div class="col-12">
+          <a href="#" class="link-title">power source ></a>
+        </div>
+      </div>
+      <!-- tab pill -->
+
+      <div class="row mt-4">
+        <div class="col-12">
+          <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
+            <li class="nav-item" role="presentation">
+              <button
+                class="nav-link nav-pill active"
+                id="pills-dc-tab"
+                data-bs-toggle="pill"
+                data-bs-target="#pills-dc"
+                type="button"
+                role="tab"
+                aria-controls="pills-dc"
+                aria-selected="true"
+              >
+                DC Power Source
+              </button>
+            </li>
+            <li class="nav-item" role="presentation">
+              <button
+                class="nav-link nav-pill"
+                id="pills-ac-tab"
+                data-bs-toggle="pill"
+                data-bs-target="#pills-ac"
+                type="button"
+                role="tab"
+                aria-controls="pills-ac"
+                aria-selected="false"
+              >
+                AC Power Source
+              </button>
+            </li>
+            <li class="nav-item" role="presentation">
+              <button
+                class="nav-link nav-pill"
+                id="pills-generator-tab"
+                data-bs-toggle="pill"
+                data-bs-target="#pills-generator"
+                type="button"
+                role="tab"
+                aria-controls="pills-generator"
+                aria-selected="false"
+              >
+                Generator Function
+              </button>
+            </li>
+          </ul>
+
+          <div class="tab-content" id="pills-tabContent">
+            <!-- DC POWER SOURCE -->
+            <div
+              class="tab-pane fade show active"
+              id="pills-dc"
+              role="tabpanel"
+              aria-labelledby="pills-dc-tab"
+            >
+              <div class="row mt-4">
+                <div class="col-12 col-sm-6 col-lg-4 col-xl-3 mb-3">
+                  <div class="card h-100">
+                    <img
+                      src="img/dc-power.png"
+                      class="card-img-top"
+                      alt="DC Power"
+                    />
+                    <div class="card-body">
+                      <h5 class="card-title">DC Power Supply</h5>
+                      <p class="card-text">
+                        The circuit that converts AC electric current to DC is
+                        called a DC Power Supply. The power supply is also
+                        better known as an adapter.
+                      </p>
+                      <a href="#" class="btn btn-primary">Learn More</a>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-12 col-sm-6 col-lg-4 col-xl-3 mb-3">
+                  <div class="card h-100">
+                    <img
+                      src="img/battery.png"
+                      class="card-img-top"
+                      alt="DC Power"
+                    />
+                    <div class="card-body">
+                      <h5 class="card-title">Battery</h5>
+                      <p class="card-text">
+                        A battery is a tool used to store electrical energy in
+                        chemical form and then convert it into electrical energy
+                        to obtain the required electric current so that it can
+                        be used to power the necessary equipment
+                      </p>
+                      <a href="#" class="btn btn-primary">Learn More</a>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-12 col-sm-6 col-lg-4 col-xl-3 mb-3">
+                  <div class="card h-100">
+                    <img
+                      src="img/solar-panel.png"
+                      class="card-img-top"
+                      alt="DC Power"
+                    />
+                    <div class="card-body">
+                      <h5 class="card-title">Solar Panels</h5>
+                      <p class="card-text">
+                        Solar panels generate DC electricity from solar energy
+                        and are commonly used to charge batteries in portable
+                        applications, such as outdoor equipment and electric
+                        vehicles
+                      </p>
+                      <a href="#" class="btn btn-primary">Learn More</a>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-12 col-sm-6 col-lg-4 col-xl-3 mb-3">
+                  <div class="card h-100">
+                    <img
+                      src="img/usb.png"
+                      class="card-img-top"
+                      alt="DC Power"
+                    />
+                    <div class="card-body">
+                      <h5 class="card-title">USB Chargers</h5>
+                      <p class="card-text">
+                        USB chargers are DC power sources commonly used to
+                        charge portable electronic devices such as phones,
+                        tablets, and digital devices through USB ports.
+                      </p>
+                      <a href="#" class="btn btn-primary">Learn More</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- END DC POWER SOURCE -->
+            <div
+              class="tab-pane fade"
+              id="pills-ac"
+              role="tabpanel"
+              aria-labelledby="pills-ac-tab"
+            >
+              <div class="row mt-4">
+                <div class="col-12 col-sm-6 col-lg-4 col-xl-3 mb-3">
+                  <div class="card h-100">
+                    <img
+                      src="img/dc-power.png"
+                      class="card-img-top"
+                      alt="DC Power"
+                    />
+                    <div class="card-body">
+                      <h5 class="card-title">DC Power Supply</h5>
+                      <p class="card-text">
+                        The circuit that converts AC electric current to DC is
+                        called a DC Power Supply. The power supply is also
+                        better known as an adapter.
+                      </p>
+                      <a href="#" class="btn btn-primary">Learn More</a>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-12 col-sm-6 col-lg-4 col-xl-3 mb-3">
+                  <div class="card h-100">
+                    <img
+                      src="img/battery.png"
+                      class="card-img-top"
+                      alt="DC Power"
+                    />
+                    <div class="card-body">
+                      <h5 class="card-title">Battery</h5>
+                      <p class="card-text">
+                        A battery is a tool used to store electrical energy in
+                        chemical form and then convert it into electrical energy
+                        to obtain the required electric current so that it can
+                        be used to power the necessary equipment
+                      </p>
+                      <a href="#" class="btn btn-primary">Learn More</a>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-12 col-sm-6 col-lg-4 col-xl-3 mb-3">
+                  <div class="card h-100">
+                    <img
+                      src="img/solar-panel.png"
+                      class="card-img-top"
+                      alt="DC Power"
+                    />
+                    <div class="card-body">
+                      <h5 class="card-title">Solar Panels</h5>
+                      <p class="card-text">
+                        Solar panels generate DC electricity from solar energy
+                        and are commonly used to charge batteries in portable
+                        applications, such as outdoor equipment and electric
+                        vehicles
+                      </p>
+                      <a href="#" class="btn btn-primary">Learn More</a>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-12 col-sm-6 col-lg-4 col-xl-3 mb-3">
+                  <div class="card h-100">
+                    <img
+                      src="img/usb.png"
+                      class="card-img-top"
+                      alt="DC Power"
+                    />
+                    <div class="card-body">
+                      <h5 class="card-title">USB Chargers</h5>
+                      <p class="card-text">
+                        USB chargers are DC power sources commonly used to
+                        charge portable electronic devices such as phones,
+                        tablets, and digital devices through USB ports.
+                      </p>
+                      <a href="#" class="btn btn-primary">Learn More</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div
+              class="tab-pane fade"
+              id="pills-generator"
+              role="tabpanel"
+              aria-labelledby="pills-generator-tab"
+            ></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- end power source -->
+
+    <!-- link js -->
+    <script src="bootstrap-5.3.3-dist/js/bootstrap.bundle.min.js"></script>
+    <script src="dist/script.js"></script>
+  </body>
+</html>
